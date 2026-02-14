@@ -3,14 +3,20 @@ import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
 import { userUserStore } from "./Store/userStore";
 
+import BookingHistory from './components/BookingHistory';
 import './App.css';
 
 function App() {
   const { currentUser, logout } = userUserStore();
 
+  
+
+
+
   return (
     <div>
       <h1>Salon Booking App</h1>
+      
 
       {currentUser ? (
         <>
@@ -23,6 +29,7 @@ function App() {
 
       {!currentUser && <RegisterForm />}
       {!currentUser && <LoginForm />}
+      {currentUser && <BookingHistory />}
     </div>
   );
 }
