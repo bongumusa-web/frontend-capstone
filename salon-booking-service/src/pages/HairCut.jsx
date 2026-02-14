@@ -2,7 +2,7 @@
 
 function HairCut() {
     return (
-        <h2>Hair cut page</h2>
+        <h2 className= "bg-red-200">Hair cut page</h2>
     )
 }
 

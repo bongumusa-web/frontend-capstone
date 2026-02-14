@@ -7,3 +7,5 @@ function HairTreatment() {
         </div>
     )
 }
+
+export default HairTreatment;
