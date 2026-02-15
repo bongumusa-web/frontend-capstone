@@ -8,9 +8,15 @@ function Navbar() {
      return (
         <nav className=" bg-black text-white shadow-md">
             <div className="mx-auto px-4">
-                <div className=" flex justify-between items-center h-16 p-6">
+                <div className=" flex justify-between items-center h-16 p-4">
+
+
+                    {/* mobile display button not to display on md and larg screen*/}
+
+                     <button onClick={ () => setISOpen(true)}  className="md:hidden text-2xl"> ☰</button>
+
                      {/*logo */}
-                     <div className=" text-3xl ">
+                     <div className=" text-2xl md:text-3xl">
 
                         Musa's Salon
 
@@ -31,10 +37,7 @@ function Navbar() {
 
 
 
-                     {/* mobile display button not to display on md and larg screen*/}
-
-                     <button onClick={ () => setISOpen(true)}  className="md:hidden text-2xl"> ☰</button>
-
+                     
                 </div>
 
             </div>

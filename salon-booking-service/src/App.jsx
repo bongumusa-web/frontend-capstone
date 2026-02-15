@@ -8,6 +8,7 @@ import LoginForm from './components/LoginForm';
 import { userUserStore } from "./Store/userStore";
 
 import BookingHistory from './components/BookingHistory';
+import Footer from './components/Footer';
 
 
 //pages 
@@ -49,6 +50,8 @@ function App() {
 
         <Route path="/history" element={<BookingHistory />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 
