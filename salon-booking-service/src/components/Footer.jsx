@@ -6,7 +6,7 @@ function Footer() {
     <footer className="bg-gray-800 text-white py-8 mt-8">
       
       {/* Main Footer Content */}
-      <div className="px-6 grid gap-8 grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto text-center py-8 px-10">
+      <div className="px-6 grid gap-10 grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto text-center py-8 px-10">
 
         {/* Explore Section */}
         <div className="text-center md:text-left">
@@ -38,7 +38,7 @@ function Footer() {
         </div>
 
         {/* Operating Hours Section */}
-        <div className="text-center md:text-left" >
+        <div className="text-center  md:text-left md:ml-10" >
           <h2 className="text-lg font-semibold mb-4 text-pink-400">Operating Hours</h2>
           <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
           <p>Saturday - Sunday: 10:00 AM - 6:00 PM</p>

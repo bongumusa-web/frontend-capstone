@@ -38,15 +38,9 @@ function App() {
         <Route path="/treatment" element={<HairTreatment />} />
         <Route path="/about" element={<AboutUs />} />
 
-        <Route
-          path="/login"
-          element={
-            <>
-              <RegisterForm />
-              <LoginForm />
-            </>
-          }
-        />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
+
 
         <Route path="/history" element={<BookingHistory />} />
       </Routes>
