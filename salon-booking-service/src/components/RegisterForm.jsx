@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { userUserStore } from "../Store/userStore";
+import { NailService } from "../pages/NailService";
 
 function RegisterForm() {
   const [formData, setFormData] = useState({
@@ -140,3 +141,4 @@ function RegisterForm() {
 }
 
 export default RegisterForm;
+

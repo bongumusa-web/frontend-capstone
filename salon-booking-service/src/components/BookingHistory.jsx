@@ -45,14 +45,14 @@ function BookingHistory() {
               className="bg-white shadow-lg rounded-xl overflow-hidden"
             >
 
-              {/* ===== IMAGE ===== */}
+              {/*  IMAGE */}
               <img
                 src={booking.image}
                 alt={booking.serviceName}
                 className="w-full h-48 object-cover"
               />
 
-              {/* ===== CONTENT ===== */}
+              {/*  CONTENT  */}
               <div className="p-4">
 
                 <h3 className="text-xl font-semibold mb-2">
