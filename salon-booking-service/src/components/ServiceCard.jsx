@@ -27,12 +27,9 @@ function ServiceCard({ image, name, price, time, description, service }) {
         <p className="text-gray-600 text-sm">{description}</p>
 
         {/* Book Button */}
-        <Link
-          to={`/booking/${service}`}
-          className="block bg-black text-white text-center py-2 mt-3 rounded hover:bg-gray-800"
-        >
-          Book Now
-        </Link>
+          <Link to="/booking" state={{ service }} className="block bg-black text-white text-center py-2 mt-3 rounded hover:bg-gray-800">
+             Book Now
+          </Link>
 
       </div>
     </div>

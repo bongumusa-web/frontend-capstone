@@ -10,6 +10,8 @@ import { userUserStore } from "./Store/userStore";
 import BookingHistory from './components/BookingHistory';
 import Footer from './components/Footer';
 
+import BookingForm from './components/BookingForm';
+
 
 //pages 
 import Home from './pages/Home';
@@ -40,7 +42,7 @@ function App() {
 
         <Route path="/login" element={<LoginForm />} />
         <Route path="/register" element={<RegisterForm />} />
-
+        <Route path="/booking" element={<BookingForm />} />
 
         <Route path="/history" element={<BookingHistory />} />
       </Routes>

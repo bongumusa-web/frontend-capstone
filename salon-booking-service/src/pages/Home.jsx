@@ -108,7 +108,7 @@ function Home() {
               <img
                 src={malecut1}
                 alt="Haircut"
-                className="w-full h-64 object-cover"
+                className="w-full h-96 object-cover"
               />
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-4">Haircut</h3>
@@ -126,7 +126,7 @@ function Home() {
               <img
                 src={naiil1}
                 alt="Nail Service"
-                className="w-full h-64 object-cover"
+                className="w-full h-96 object-cover"
               />
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-4">Nail Service</h3>
@@ -144,7 +144,7 @@ function Home() {
               <img
                 src={hairservice2}
                 alt="Hair Treatment"
-                className="w-full h-64 object-cover"
+                className="w-full h-96 object-cover"
               />
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold mb-4">Hair Treatment</h3>
