@@ -41,8 +41,8 @@ function Footer() {
         <div className="text-center  md:text-left md:ml-10" >
           <h2 className="text-lg font-semibold mb-4 text-pink-400">Operating Hours</h2>
           <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-          <p>Saturday - Sunday: 10:00 AM - 6:00 PM</p>
-          <p>Public Holidays: 10:00 AM - 4:00 PM</p>
+          <p>Saturday - Sunday: 09:00 AM - 5:00 PM</p>
+          <p>Public Holidays: Closed</p>
         </div>
 
       </div>
