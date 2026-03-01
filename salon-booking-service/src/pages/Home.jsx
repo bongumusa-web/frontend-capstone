@@ -80,8 +80,8 @@ function Home() {
             Book ahead and avoid long waiting times.
           </p>
           <h2 className="text-lg font-semibold mb-4 text-pink-400">Operating Hours</h2>
-          <p>Weekdays: 9:00 AM - 8:00 PM, Weekend: 10:00 AM - 6:00 PM</p>
-          <p className="mb-4">Public Holidays: 10:00 AM - 4:00 PM</p>
+          <p>Weekdays: 9:00 AM - 8:00 PM, Weekend: 09:00 AM - 5:00 PM</p>
+          <p className="mb-4">Public Holidays: Close</p>
 
           <Link
             to="/haircut"
