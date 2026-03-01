@@ -81,7 +81,7 @@ function Home() {
           </p>
           <h2 className="text-lg font-semibold mb-4 text-pink-400">Operating Hours</h2>
           <p>Weekdays: 9:00 AM - 8:00 PM, Weekend: 09:00 AM - 5:00 PM</p>
-          <p className="mb-4">Public Holidays: Close</p>
+          <p className="mb-4">Public Holidays: Closed</p>
 
           <Link
             to="/haircut"
