@@ -11,17 +11,18 @@ function HairCut() {
       .then((response) => response.json())
       .then((data) => {
 
-        // only haircut services
         const haircutServices = data.filter(
           (service) => service.category === "Men’s Haircut"
         );
 
         setServices(haircutServices);
+
       });
 
   }, []);
 
   return (
+
     <div className="p-6">
 
       <h2 className="text-3xl font-bold text-center mb-6">
@@ -39,7 +40,7 @@ function HairCut() {
             price={`R${service.price}`}
             time={service.estimatedTime}
             description={service.description}
-            service={service.category}
+            service={service}   
           />
 
         ))}
@@ -47,6 +48,7 @@ function HairCut() {
       </div>
 
     </div>
+
   );
 }
 

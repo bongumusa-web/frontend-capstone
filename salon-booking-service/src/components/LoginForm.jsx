@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { userUserStore } from "../Store/userStore";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function LoginForm() {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ function LoginForm() {
 
   const [error, setError] = useState("");
   const login = userUserStore((state) => state.login);
+  const navigate = useNavigate();
 
   function handleChange(e) {
     setFormData({
@@ -26,7 +27,6 @@ function LoginForm() {
       const response = await fetch(
         "https://698a420ac04d974bc6a1cc6d.mockapi.io/user_booking"
       );
-
       const users = await response.json();
 
       const user = users.find(
@@ -37,6 +37,13 @@ function LoginForm() {
 
       if (user) {
         login(user);
+
+        alert("Login successful! ✅ Redirecting to homepage...");
+
+        // Wait 1 second then redirect
+        setTimeout(() => {
+          navigate("/");
+        }, 1000); // 1000ms = 1 second
       } else {
         setError("Username or password is incorrect");
       }
@@ -103,7 +110,7 @@ function LoginForm() {
         <button
           type="submit"
           className="w-full bg-pink-500 text-white py-2 px-4 rounded-md
-                     hover:bg-blue-600 transition text-lg"
+                     hover:bg-pink-700 transition text-lg"
         >
           Login
         </button>

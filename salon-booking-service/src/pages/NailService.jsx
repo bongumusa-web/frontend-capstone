@@ -39,7 +39,7 @@ export function NailService() {
             price={`R${service.price}`}
             time={service.estimatedTime}
             description={service.description}
-            service={service.category}
+            service={service}
           />
 
         ))}

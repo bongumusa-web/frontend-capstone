@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { userUserStore } from "../Store/userStore";
-import { NailService } from "../pages/NailService";
+import { useNavigate } from "react-router-dom";
 
 function RegisterForm() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,7 @@ function RegisterForm() {
   });
 
   const login = userUserStore((state) => state.login);
+  const navigate = useNavigate();
 
   function handleChange(e) {
     setFormData({
@@ -20,7 +21,6 @@ function RegisterForm() {
     });
   }
 
-  // Handle Submit
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -38,9 +38,20 @@ function RegisterForm() {
       );
 
       const newUser = await response.json();
+
       login(newUser);
+
+      // Show success message
+      alert("Registration successful! Redirecting to homepage...");
+
+      // Wait 1 second, then navigate
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
+
     } catch (error) {
       console.log("Error creating user:", error);
+      alert("Failed to register. Please try again.");
     }
   }
 
@@ -141,4 +152,3 @@ function RegisterForm() {
 }
 
 export default RegisterForm;
-
