@@ -7,9 +7,9 @@ import naiil1 from "../assets/nail1.jpg";
 import hairservice2 from "../assets/hairservice2.jpg";
 
 import mbali from "../assets/mbali1.jpg";
-import Maxwell from "../assets/Maxwell.jpg";
-import Monica from "../assets/Monica.jpg";
-import Musa from "../assets/Musa.jpg";
+import maxwell from "../assets/maxwell.jpg";
+import monica from "../assets/monica.jpg";
+import musa from "../assets/musa.jpg";
 import zama from "../assets/zama.jpg";
 
 function Home() {
@@ -24,19 +24,19 @@ function Home() {
     },
     {
       name: "Maxwell",
-      image: Maxwell,
+      image: maxwell,
       rating: "★★★★☆",
       message: "Great haircut and no waiting in long queues!",
     },
     {
       name: "Monica",
-      image: Monica,
+      image: monica,
       rating: "★★★☆☆",
       message: "Loved the nail service. Very professional staff.",
     },
     {
       name: "Musa",
-      image: Musa,
+      image: musa,
       rating: "★★★★★",
       message: "Best salon experience. Quick and stress-free.",
     },
