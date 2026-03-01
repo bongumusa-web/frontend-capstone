@@ -192,22 +192,8 @@ function Home() {
         </div>
       </section>
 
-      {/* ================= CALL TO ACTION ================= */}
-      <section className="py-16 bg-pink-500 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          Ready to Book Your Appointment?
-        </h2>
-        <p className="mb-6">
-          Avoid long queues and secure your spot today.
-        </p>
-
-        <Link
-          to="/haircut"
-          className="bg-white text-pink-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
-        >
-          Book Now
-        </Link>
-      </section>
+      
+      
 
     </div>
   );
